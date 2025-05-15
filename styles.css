@@ -1,0 +1,106 @@
+@import "tailwindcss";
+:root {
+  --primary-color: #10b981;
+  --text-color: #374151;
+  --bg-color: #f9fafb;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  transition: all 0.3s ease;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.theme-green {
+  --primary-color: #10b981;
+}
+
+.theme-blue {
+  --primary-color: #3b82f6;
+}
+
+.theme-purple {
+  --primary-color: #8b5cf6;
+}
+
+.theme-red {
+  --primary-color: #ef4444;
+}
+
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+.border-primary {
+  border-color: var(--primary-color);
+}
+
+.hover\:bg-primary:hover {
+  background-color: var(--primary-color);
+}
+
+.settings-panel {
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+
+.settings-panel.open {
+  transform: translateX(0);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.floating-btn {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.preview-image {
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.admin-only {
+  display: none !important;
+}
+
+/* Show them when in admin mode */
+.admin-mode .admin-only {
+  display: block !important; /* or flex/inline-block depending on your button */
+}
+
+/* Optional animation for the dropdown */
+#language-dropdown {
+  transition: all 0.2s ease-out;
+  transform-origin: bottom right;
+}
+
+#language-dropdown:not(.hidden) {
+  animation: scaleIn 0.15s ease-out forwards;
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

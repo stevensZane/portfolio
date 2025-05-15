@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stevenszane.dev</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body class="theme-green p-4">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-30">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-primary">stevenszane<span class="text-gray-700">.dev</span></a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="hover:text-primary transition">Home</a>
+                <a href="#about" class="hover:text-primary transition">About</a>
+                <a href="#projects" class="hover:text-primary transition">Projects</a>
+                <a href="#contact" class="hover:text-primary transition">Contact</a>
+            </div>
+            <button id="mobileMenuBtn" class="md:hidden text-gray-700">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white py-2 px-4 shadow-md">
+            <a href="#home" class="block py-2 hover:text-primary transition">Home</a>
+            <a href="#about" class="block py-2 hover:text-primary transition">About</a>
+            <a href="#projects" class="block py-2 hover:text-primary transition">Projects</a>
+            <a href="#contact" class="block py-2 hover:text-primary transition">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="py-20 bg-gradient-to-r from-green-50 to-white">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Hi, I'm <span class="text-primary">Havila</span></h1>
+                <h2 class="text-2xl md:text-3xl font-semibold mb-6">Data Analyst <span class="text-primary"> &</span> Creative Web Developer</h2>
+                <p class="text-lg mb-5 max-w-lg">I build beautiful, functional digital experiences. Let's create something amazing together!</p> 
+                <p class="text-lg mb-4">(P.S. Online, I go by <span class="text-primary">Stevens Zane</span>.)</p>
+                <div class="flex space-x-4">
+                    <a href="#contact" class="px-6 py-3 bg-primary text-white rounded-lg hover:bg-opacity-90 transition">Get in Touch</a>
+                    <a href="#projects" class="px-6 py-3 border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition">View Work</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative">
+                    <div class="w-64 h-64 md:w-80 md:h-80 bg-primary rounded-full opacity-20 absolute -z-10 top-4 left-4"></div>
+                    <img src="./me.png" 
+                         alt="Profile" 
+                         class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-white shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">About <span class="text-primary">Me</span></h2>
+            
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-4">Who I Am</h3>
+                    <p class="mb-4">I'm a passionate developer, designer, and data analyst who loves turning ideas into interactive, user-friendly digital experiences.</p>
+                    <p class="mb-6">Through hands-on projects, I’ve built a strong foundation in front-end development, UI/UX design, and data storytelling. I enjoy learning by building — every project is a new opportunity to grow and problem-solve creatively. When I’m not coding, you’ll find me exploring design tools, diving into datasets, reading sci-fi, or imagining what the future could look like.</p>
+                    
+                    <div class="mb-8">
+                        <h4 class="text-xl font-semibold mb-4">Skills</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-gray-100 rounded-full">JavaScript</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full">HTML/CSS</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full">React</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full">Tailwind</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full">UI Design</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full">Figma</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full">Bootstrap</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full">Git</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full">Python</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full">Django</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full">Flask</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full">Streamlit</span>
+                        </div>
+                    </div>
+                    
+                    <!-- CV Upload Section -->
+                    <div class="mb-8">
+                        <h4 class="text-xl font-semibold mb-4">My CV</h4>
+                        <div class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center">
+                            <input type="file" id="cvUpload" accept=".pdf,.doc,.docx" class="hidden">
+                            
+                            <!-- Upload prompt -->
+                            <div id="uploadPrompt">
+                                <label for="cvUpload" class="cursor-pointer flex flex-col items-center">
+                                    <i class="fas fa-file-upload text-4xl text-primary mb-3"></i>
+                                    <p class="mb-2">Click to upload your CV</p>
+                                    <p class="text-sm text-gray-500">PDF or Word document (max 5MB)</p>
+                                </label>
+                            </div>
+                            
+                            <!-- Uploaded file info -->
+                            <div id="uploadedFile" class="hidden mt-4">
+                                <div class="flex items-center justify-between bg-gray-100 p-3 rounded">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-file text-xl text-primary mr-3"></i>
+                                        <div>
+                                            <p id="fileName" class="font-medium"></p>
+                                            <p id="fileSize" class="text-xs text-gray-500"></p>
+                                        </div>
+                                    </div>
+                                    <div class="flex space-x-3 admin">
+                                        <button id="downloadCv" class="text-blue-500 hover:text-blue-700" title="Download">
+                                            <i class="fas fa-download"></i>
+                                        </button>
+                                        <button id="removeCv" class="text-red-500 hover:text-red-700 admin-only" title="Remove">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-4">Project experience</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="border-l-4 border-primary pl-4 py-2">
+                            <h4 class="font-semibold">Web App Developer</h4>
+                            <p class="text-gray-600">Streamlit Web Scraper • 2025</p>
+                            <p class="mt-2">Created a lightweight web application using Streamlit to scrape and display structured data from the web. Focused on building a clean user interface and handling data presentation.</p>
+                        </div>
+                        
+                        <div class="border-l-4 border-primary pl-4 py-2">
+                            <h4 class="font-semibold">UI/UX Designer</h4>
+                            <p class="text-gray-600">School Project • 2025</p>
+                            <p class="mt-2">Designed user interfaces for mobile and web applications, creating wireframes and prototypes.</p>
+                        </div>
+                        
+                        <div class="border-l-4 border-primary pl-4 py-2">
+                            <h4 class="font-semibold">Frontend Designer & Developer</h4>
+                            <p class="text-gray-600">School Housing Project • 2024</p>
+                            <p class="mt-2">Collaborated with a colleague to design and build a housing website for international students to explore accommodation options. Focused on user experience, layout design, and front-end development using HTML, CSS, and JavaScript..</p>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-2xl font-semibold mt-8 mb-4">Education</h3>
+                    <div class="border-l-4 border-primary pl-4 py-2">
+                        <h4 class="font-semibold">Licence Big Data</h4>
+                        <p class="text-gray-600">Dakar Institute of Technology (L2) • Present </p>
+                        <p class="mt-2"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">My <span class="text-primary">Projects</span></h2>
+            
+            <!-- Project Filter -->
+            <div class="flex justify-center mb-8">
+                <div class="inline-flex rounded-md shadow-sm">
+                    <button data-filter="all" class="px-4 py-2 text-sm font-medium rounded-l-lg border border-gray-300 bg-white hover:bg-gray-50 focus:z-10 focus:ring-1 focus:ring-primary focus:border-primary project-filter active">
+                        All
+                    </button>
+                    <button data-filter="web" class="px-4 py-2 text-sm font-medium border-t border-b border-gray-300 bg-white hover:bg-gray-50 focus:z-10 focus:ring-1 focus:ring-primary focus:border-primary project-filter">
+                        Web
+                    </button>
+                    <button data-filter="mobile" class="px-4 py-2 text-sm font-medium border-t border-b border-gray-300 bg-white hover:bg-gray-50 focus:z-10 focus:ring-1 focus:ring-primary focus:border-primary project-filter">
+                        Mobile
+                    </button>
+                    <button data-filter="design" class="px-4 py-2 text-sm font-medium rounded-r-lg border border-gray-300 bg-white hover:bg-gray-50 focus:z-10 focus:ring-1 focus:ring-primary focus:border-primary project-filter">
+                        Design
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Add New Project Button -->
+            <div class="text-center mb-8">
+                <button id="addProjectBtn" class="admin-only px-6 py-2 bg-primary text-white rounded-lg hover:bg-opacity-90 transition flex items-center mx-auto">
+                    <i class="fas fa-plus mr-2"></i> Add New Project
+                </button>
+            </div>
+            
+            <!-- Project Modal -->
+            <div id="projectModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center hidden">
+            <div class="bg-white rounded-lg p-6 w-full max-w-2xl max-h-screen overflow-y-auto">
+                <div class="flex justify-between items-center mb-4">
+                <h3 id="modalTitle" class="text-xl font-bold">Add New Project</h3>
+                <button id="closeModal" class="text-gray-500 hover:text-primary">
+                    <i class="fas fa-times"></i>
+                </button>
+                </div>
+                
+                <form id="projectForm" class="space-y-4">
+                <div>
+                    <label for="projectTitle" class="block text-sm font-medium text-gray-700 mb-1">Project Title</label>
+                    <input type="text" id="projectTitle" class="w-full p-2 border rounded" required>
+                </div>
+                
+                <div>
+                    <label for="projectCategory" class="block text-sm font-medium text-gray-700 mb-1">Category</label>
+                    <select id="projectCategory" class="w-full p-2 border rounded">
+                    <option value="web">Web</option>
+                    <option value="mobile">Mobile</option>
+                    <option value="design">Design</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="projectDescription" class="block text-sm font-medium text-gray-700 mb-1">Description</label>
+                    <textarea id="projectDescription" rows="3" class="w-full p-2 border rounded" required></textarea>
+                </div>
+                
+                <div>
+                    <label for="projectImage" class="block text-sm font-medium text-gray-700 mb-1">Project Image</label>
+                    <input type="file" id="projectImage" accept="image/*" class="hidden">
+                    <label for="projectImage" class="border-2 border-dashed border-gray-300 rounded-lg p-4 block text-center cursor-pointer hover:border-primary transition">
+                    <i class="fas fa-image text-3xl text-primary mb-2"></i>
+                    <p>Click to upload project image</p>
+                    <p class="text-sm text-gray-500">JPG or PNG (max 5MB)</p>
+                    </label>
+                    <div id="imagePreviewContainer" class="mt-4 hidden">
+                    <img id="imagePreview" src="#" alt="Preview" class="w-full rounded-lg">
+                    <button id="removeImage" type="button" class="text-sm text-red-500 hover:underline mt-2">Remove Image</button>
+                    </div>
+                </div>
+                
+                <div>
+                    <label for="projectLink" class="block text-sm font-medium text-gray-700 mb-1">Project Link (optional)</label>
+                    <input type="url" id="projectLink" class="w-full p-2 border rounded" placeholder="https://example.com">
+                </div>
+                
+                <div class="flex justify-between pt-4">
+                    <div>
+                    <button type="button" id="deleteProject" class="admin-only px-4 py-2 text-red-500 hover:text-red-700 hidden">
+                        <i class="fas fa-trash-alt mr-2"></i>Delete
+                    </button>
+                    </div>
+                    <div class="flex space-x-3">
+                    <button type="button" id="cancelProject" class="px-4 py-2 border rounded-lg hover:bg-gray-50">Cancel</button>
+                    <button type="submit" class="px-6 py-2 bg-primary text-white rounded-lg hover:bg-opacity-90">
+                        <span id="saveButtonText">Save Project</span>
+                    </button>
+                    </div>
+                </div>
+                </form>
+            </div>
+            </div>
+            
+            <!-- Projects Grid -->
+            <div id="projectsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project cards will be added here dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Get In <span class="text-primary">Touch</span></h2>
+            
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-4">Contact Information</h3>
+                    <p class="mb-6">Feel free to reach out for collaborations or just a friendly hello!</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-full mr-4">
+                                <i class="fas fa-envelope text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Email</h4>
+                                <p>lasiebazoungoula@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-full mr-4">
+                                <i class="fas fa-phone text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Phone</h4>
+                                <p>+221 77 540 81 64</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-full mr-4">
+                                <i class="fas fa-map-marker-alt text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Location</h4>
+                                <p>Liberté 6, Dakar</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-semibold mb-4">Follow Me</h4>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/stevensZane/" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-primary hover:text-white transition">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/lasie-havila-bazoungoula-15a2962b6/" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-primary hover:text-white transition">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://wa.me/+221775408164" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-primary hover:text-white transition">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="https://www.figma.com/files/team/1423099313360698004/recents-and-sharing?fuid=1423099311537940987" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-primary hover:text-white transition">
+                                <i class="fab fa-figma"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-4">Send Me a Message</h3>
+                    <form id="contactForm" action="https://formspree.io/f/xgvklwra" method="POST" class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                            <input type="text" name="name" id="name" class="w-full p-2 border rounded" required>
+                        </div>
+
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                            <input type="email" name="email" id="email" class="w-full p-2 border rounded" required>
+                        </div>
+
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                            <input type="text" name="subject" id="subject" class="w-full p-2 border rounded" required>
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea name="message" id="message" rows="4" class="w-full p-2 border rounded" required></textarea>
+                        </div>
+
+                        <input type="hidden" name="_captcha" value="false">
+
+                        <button type="submit" class="w-full py-3 bg-green-500 text-white rounded-lg hover:bg-orange-600 transition">
+                            Send Message
+                        </button>
+
+                        <p id="formStatus" class="text-green-600 font-medium text-sm hidden">Thanks! I’ll get back to you soon.</p>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-gray-800 text-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <a href="#" class="text-2xl font-bold text-white">stevenszane<span class="text-primary">.dev</span></a>
+                </div>
+                
+                <div class="flex space-x-6 mb-4 md:mb-0">
+                    <a href="#home" class="hover:text-primary transition">Home</a>
+                    <a href="#about" class="hover:text-primary transition">About</a>
+                    <a href="#projects" class="hover:text-primary transition">Projects</a>
+                    <a href="#contact" class="hover:text-primary transition">Contact</a>
+                </div>
+                
+                <div class="text-sm text-gray-400">
+                    &copy; 2023 stevenszane.dev All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>
